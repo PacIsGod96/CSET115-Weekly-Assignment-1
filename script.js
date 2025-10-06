@@ -48,14 +48,15 @@ for(let i =0; i < btn.length; i++){
 }
 
 function toggleHistory() {
-    const historyDiv = document.getElementById("history");
-    const button = document.querySelector("button");
+    let historyP = document.querySelector("#historyPage");
+    let button = document.querySelector(".buttonMove")
+    let hidden = getComputedStyle(historyP).display == "none"
 
-    if (historyDiv.style.display === "none" || historyDiv.style.display === "") {
-        historyDiv.style.display = "block";
-        button.textContent = "Hide History";
-    } else {
-        historyDiv.style.display = "none";
-        button.textContent = "Show History";
+    if(hidden){
+        historyP.style.display = "block"
+        button.textContent = "Hide History"
+    }else{
+        historyP.style.display = "none"
+        button.textContent = "Show History"
     }
-    }
+}
