@@ -1,8 +1,8 @@
+
 .calculator{
     width: 490px;
     height: 750px;
     background-color: #e8e5df ;
-    margin: 0 auto;
 }
 #history{
     text-align: right;
@@ -42,18 +42,3 @@
     color: white;
 }
 
-.buttonmove {
-    position: relative;
-    position: absolute;
-    top: 100;
-    right: 100;
-    display: flex;
-}
-
-#historybutton{
-    display: none;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-top: 10px;
-}
