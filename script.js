@@ -43,7 +43,21 @@ for(let i =0; i < btn.length; i++){
             textHistory = equal.toString();
             newNumber = true
             solved = true
-        }      
+        }else if(btnText == `⌫`){
+            currentNum.textContent = currentNum.textContent.slice(0,-1)
+            if(currentNum.textContent == ``){
+                currentNum.textContent = `0`
+            }
+        }else if(btnText == `C`){
+            currentNum.textContent =currentNum.textContent.slice(0, length)
+            textHistory = textHistory.slice(0, length)
+            history.textContent = textHistory
+            if(currentNum.textContent == ``){
+                currentNum.textContent = `0`
+                textHistory = `0`
+                history.textContent = textHistory
+            }
+        }
     })
 }
 
