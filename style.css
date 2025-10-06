@@ -43,16 +43,13 @@
 }
 
 .buttonmove {
+    position: relative;
+    position: absolute;
+    top: 100;
+    right: 100;
     display: flex;
-      justify-content: flex-end; /* Push content to the right */
-      align-items: flex-start;   /* Align content to the top */
-    padding: 10px;
-    }
+}
 
-    button {
-    padding: 8px 12px;
-    font-size: 14px;
-    }
 #historybutton{
     display: none;
     background-color: #f0f0f0;
