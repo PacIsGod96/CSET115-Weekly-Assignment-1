@@ -46,3 +46,16 @@ for(let i =0; i < btn.length; i++){
         }      
     })
 }
+
+function toggleHistory() {
+    const historyDiv = document.getElementById("history");
+    const button = document.querySelector("button");
+
+    if (historyDiv.style.display === "none" || historyDiv.style.display === "") {
+        historyDiv.style.display = "block";
+        button.textContent = "Hide History";
+    } else {
+        historyDiv.style.display = "none";
+        button.textContent = "Show History";
+    }
+    }

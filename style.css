@@ -42,4 +42,21 @@
     color: white;
 }
 
+.buttonmove {
+    display: flex;
+      justify-content: flex-end; /* Push content to the right */
+      align-items: flex-start;   /* Align content to the top */
+    padding: 10px;
+    }
 
+    button {
+    padding: 8px 12px;
+    font-size: 14px;
+    }
+#historybutton{
+    display: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 10px;
+}
