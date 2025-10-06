@@ -65,7 +65,6 @@ function toggleHistory() {
     let historyP = document.querySelector("#historyPage");
     let button = document.querySelector(".buttonMove")
     let hidden = getComputedStyle(historyP).display == "none"
-    
     if(hidden){
         historyP.style.display = "block"
         button.textContent = "Hide History"
